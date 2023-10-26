@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: relative;
+  background: url(img/bg.png);
+  height: 100vb;
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: animate 15s infinite;
+  -webkit-animation: animate 15s infinite;
+}
+
+.mobil {
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  }
+}
